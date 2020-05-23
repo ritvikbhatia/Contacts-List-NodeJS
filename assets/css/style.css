@@ -1,0 +1,17 @@
+body{
+    background-color:pink;
+    text-align: center;
+}
+#heading{
+    color:rgb(255, 0, 157);
+}
+.box{
+    width: 50vw;
+    padding: 2px;
+    margin: 5px;
+    background-color: gray;
+    border: red;
+}
+.box p{
+    color: white;
+}

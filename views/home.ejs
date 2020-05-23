@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Contact List</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1 id="heading">Contacts List</h1>
+        <% for(let i of Pussy){%>
+            <div class="box">    
+            <p>
+                    <%=i.name%>
+                    <%=i.phone%>
+            </p>
+            </div>
+        <%}%>
+            <form action="/yo" method="POST">
+                <input type="text" placeholder="your name" name="name">
+                <input type="number" placeholder="your phone" name="phone">
+                <button type="submit" >Submit</button>
+            </form>
+    </body>
+</html>
