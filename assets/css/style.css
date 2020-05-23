@@ -1,11 +1,14 @@
 body{
     background-color:pink;
     text-align: center;
+    al
 }
 #heading{
     color:rgb(255, 0, 157);
 }
 .box{
+    position: relative;
+    left: 23vw;
     width: 50vw;
     padding: 2px;
     margin: 5px;
@@ -15,10 +18,10 @@ body{
 .box p{
     color: white;
 }
-box:hover{
+.box:hover{
     background-color: white;
     border: black;
 }
-box:hover p{
+.box:hover p{
     color: black;
 }
