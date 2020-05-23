@@ -15,3 +15,10 @@ body{
 .box p{
     color: white;
 }
+box:hover{
+    background-color: white;
+    border: black;
+}
+box:hover p{
+    color: black;
+}
