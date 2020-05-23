@@ -25,3 +25,7 @@ body{
 .box:hover p{
     color: black;
 }
+#clearall{
+    background-color: yellow;
+
+}

@@ -12,8 +12,12 @@ app.get('/',function(req,res){
 });
 app.post('/yo',function(req,res)
 {
-    console.log(req.body);
     pussy.push(req.body);
+    res.redirect('/');
+})
+app.post('/clear',function(req,res)
+{
+    pussy=[];
     res.redirect('/');
 })
 app.listen(port,function(err){
