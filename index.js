@@ -31,9 +31,18 @@ app.post('/yo',function(req,res)
     })
     res.redirect('/');
 })
+app.get('/delete',function(req,res){
+    let id=req.query.id;
+    Contact.findByIdAndDelete(id,function(err){
+        if(err)
+        console.log(err);
+        res.redirect('back')
+
+    })
+})
 app.post('/clear',function(req,res)
 {
-    pussy=[];
+   Contact.collection.drop();
     res.redirect('/');
 })
 app.listen(port,function(err){
